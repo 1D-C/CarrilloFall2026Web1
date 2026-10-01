@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color:darkgoldenrod;
+font-family: "Playwrite BE WAL Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+ h1{
+  font-family: "Fredericka the Great", serif;
+  font-weight: 900;
+    font-style: normal;
+ }
+ nav a{
+    color:bisque;
+ }
+
+ Main a{
+    color: whitesmoke;
+ }
