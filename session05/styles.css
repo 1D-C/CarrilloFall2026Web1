@@ -1,0 +1,62 @@
+body {
+    background-color: #332A22;
+    color: #817366;
+font-family: "Playwrite BE WAL Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+ h1{
+  font-family: "Fredericka the Great", serif;
+  font-weight: 900;
+    font-style: normal;
+ }
+ nav a {
+
+    color: #D69662;
+
+    text-decoration: none;
+
+    background-color: #817366;
+
+    display: inline-block;
+
+    padding: 10px;
+
+    margin: 10px;
+
+    border: 4px dotted #D69662;
+    font-size: 15px;
+
+}
+
+nav a:hover {
+   background-color: #D69662;
+   color: #332A22;
+   font-size: 20px;
+   border: 8px dotted #817366;
+
+}
+
+
+ Main a{
+    color: #817366;
+ }
+
+
+/*class rule with the dot syntax*/
+ div.artistEntry {
+   padding: 20px;
+   margin: 80px 20px 40px 20px;
+   background-color:#D69662;
+    border: 10px dotted #817366;
+   }
+
+   h1 h2 h3 h4 h5 h6 {
+      margin: 0px;
+      padding: 0px;
+   }
+
+
+   #headerSection {
+
+   }
