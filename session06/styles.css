@@ -1,0 +1,134 @@
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* END border-box fix/ side ends*/
+
+body {
+	background-color: #E0C982;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*background color*/
+div.container {
+  width: 95%;
+  margin: 0px auto;
+ background-size: cover;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKBN0Qg3BJpDmjg0NlJcPL_a6FY6AD4UqLanwsSWJP5w&s=10)
+;  background-attachment: fixed;
+}
+
+header, nav, main, aside, footer {
+	padding: 15px;
+}
+
+header {
+  background-color: #5A5034;
+}
+
+/* START NAV STYLES */
+nav {
+	background-color: #948456;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	
+}
+
+nav ul {
+	padding: 0px;
+	margin: 0px;
+}
+nav ul li {
+	display: inline-block;
+	background-color: #5A5034;
+	width: 100px;
+	text-align: center;
+	padding: 20px 0px ;
+	color: #B19E67;
+	margin: 0px 20px 0px 0px;
+		border-radius: 20px;
+
+}
+/* END NAV STYLES */
+
+main {
+  background-color: #CEB978;
+  float:left;
+  width: 70%;
+  		border-radius: 140px;
+
+}
+
+main div.description img.thumbnail {
+	width: 100px;
+	border: solid 10px #3C3623;
+	float: left;
+	margin: 0px 15px 5px 0px;
+		border-radius: 45px;
+
+}
+
+main div.description {
+  margin-bottom: 40px;
+}
+
+div.buttonAbsolute {
+	background-color: #776A45;
+	position: absolute;
+	top: 30px;
+	right:200px;
+	padding: 10px;
+	border-radius: 10px;
+	z-index: 1;
+	opacity: .8;
+	width: 130px;
+	text-align: center;
+	
+}
+
+div.buttonAbsolute2 {
+	background-color: #E0C982;
+	position: absolute;
+	top: 45px;
+	right:100px;
+	border-radius: 40px;
+	padding: 20px;
+	z-index: .7;
+	width: 100px;
+	height: 100px;
+		opacity: .5;
+	text-align: bottom;
+}
+
+div.buttonRelative {
+	background-color: #948456;
+	position: relative;
+	left: 115px;
+	width: 90px;
+	padding: 10px;
+	z-index: 5;
+		border-radius: 40px;
+margin: 1px 40px 0px 0px;
+}
+
+aside {
+  background-color: #B19E67;
+  float:left;
+  width: 30%;
+  		border-radius: 90px;
+
+}
+footer {
+  background-color: #5A5034;
+  float: none;
+  clear:both;
+  		border-radius: 20px;
+
+}
+
