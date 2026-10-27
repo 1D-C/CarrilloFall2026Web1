@@ -1,0 +1,153 @@
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /*  set max width of .container but display body as flex and center it's contents */
+  justify-content: center;
+  /*  this centers the contents of the body like .container */
+ background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3ez6giIH3iqO4qHz3RBYQBP75haWoyhmXX8FrG2ycCg&s=10)
+;  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+/* Add padding to all of the .container child elements */
+.container>* {
+  padding: 20px;
+  
+}
+
+.container {
+  color: white;
+  display: flex;
+  /* use flex box */
+      flex: 1 3 100%;
+  flex-wrap: wrap;
+  /* wrap */
+  max-width: 1000px;
+
+}
+
+header {
+  background: #53A69B;
+      flex: 1 3 100%;
+  /* grow on, shrink on, span width of browser */
+  order: 1;
+  /* display order regardless of html structure */
+
+  /* POSITION STICKY */
+ position: sticky;
+  top: 0;
+  z-index: 1; 
+  font-family: "Crafty Girls", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+main {
+  background: #A76D54;
+  flex: 1 3 500px;
+  order: 3;
+font-family: "Crafty Girls", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  background: #A65453;
+  flex: 1 3 200px;
+  /* grow but do not shrink less than basis */
+  order: 2;
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pics {
+  width: 50%;
+  height: auto;
+  border-radius: 80px;
+  border: 1px outset white;
+  flex: 1 3 200px;
+float: left;
+  margin: 5px;
+}
+
+.sweater {
+  width: 50%;
+  height: auto;
+  border-radius: 100px;
+  border: 1px outset white;
+  flex: 1 3 200px;
+float: right;
+  margin: 10px;
+}
+
+/* start nav link styling*/
+nav a {
+  color: white;
+  text-decoration: none;
+  border: 1px outset white;
+  display:block;
+    background: #53A69B;
+border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+/* end nav link styling*/
+
+nav a:hover {
+  text-shadow: 4px 4px 1px black;
+  text-decoration: underline;
+}
+
+ul, li {
+  list-style-type: none;
+  border: 1px outset white;
+  color: white;
+  padding: 10px;
+}
+
+aside {
+  background: #514743;
+  flex: 2 3 200px;
+  /* grow but do not shrink less than basis */
+  order: 4;
+  font-family: "Crafty Girls", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer {
+  background: #332929;
+  flex: 1 3 100%;
+  /* grow on, shrink on, span width of browser */
+  order: 5;
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

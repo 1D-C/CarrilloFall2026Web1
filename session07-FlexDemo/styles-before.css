@@ -1,0 +1,98 @@
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+body {
+  padding: 0;
+  margin: 0;
+
+  /* display: flex; */
+  /*  set max width of .container but display body as flex and center it's contents */
+
+  /* justify-content: center; */
+  /*  this centers the contents of the body like #wrapper */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+/* Add padding to all of the .container child elements */
+#wrapper>* {
+  padding: 20px;
+}
+
+#wrapper {
+  margin: 0px auto;
+  /* centers the wrapper */
+
+  color: white;
+
+  /* display: flex; */
+  /* use flex box */
+
+  /* flex-wrap: wrap; */
+  /* wrap */
+
+  max-width: 1000px;
+  /* max-width: 100%; */
+}
+
+header {
+  background: skyblue;
+
+  /* flex: 1 0 100%; */
+  /* grow on, shrink off, span width of browser */
+
+  /* order: 1; */
+  /* display order regardless of html structure */
+}
+
+main {
+  background: slategray;
+  /* flex: 1 1 500px; */
+  /* order: 3; */
+}
+
+nav {
+  background: cadetblue;
+  /* flex: 1 0 200px; */
+  /* grow but do not shrink less than basis */
+
+  /* order: 2; */
+}
+
+aside {
+  background: seagreen;
+
+  /* flex: 1 0 200px; */
+  /* grow but do not shrink less than basis */
+
+  /* order: 4; */
+}
+
+footer {
+  background: darkslateblue;
+  /* flex: 1 0 100%; */
+  /* grow on, shrink off, span width of browser */
+
+  /* order: 5; */
+}
