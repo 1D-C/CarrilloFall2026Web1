@@ -1,0 +1,258 @@
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  /* remove margin and padding on body */
+  padding: 0;
+  margin: 0;
+  background-color: goldenrod;
+}
+
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  background: #b46609;
+  /* grid layout parent */
+  display: grid;
+  /* create 12 col layout */
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* padding on immediate children of wrapper */
+.wrapper>* {
+  padding: 30px;
+}
+
+div.background {
+  background: brown;
+  /* span all 12 cols*/
+  grid-column: 1 / 13;
+}
+
+div.back1{
+  background: white;
+  /* span 6 cols */
+  grid-column: 1/ 3;
+}
+
+div.back2{
+  background: white;
+  /* span 6 cols */
+  grid-column: 4/ 5;
+}
+
+div.b1{
+  background: black;
+  /* span 3 cols */
+  grid-column: 4/ 4;
+}
+
+div.b2{
+  background: black;
+  /* span 3 cols */
+  grid-column: 9/ 9;
+}
+div.b3{
+  background: black;
+  /* span 3 cols */
+  grid-column: 3/ 3;
+}
+
+div.b4{
+  background: black;
+  /* span 3 cols */
+  grid-column: 5/ 5;
+}
+
+div.b5{
+  background: black;
+  /* span 3 cols */
+  grid-column: 8/ 9;
+}
+
+div.b6{
+  background: black;
+  /* span 3 cols */
+  grid-column: 10/ 10;
+}
+
+div.b7{
+  background: black;
+  /* span 3 cols */
+  grid-column: 2/ 2;
+}
+
+div.b8{
+  background: black;
+  /* span 3 cols */
+  grid-column: 11/ 11;
+}
+
+div.b9{
+  background: black;
+  /* span 3 cols */
+  grid-column: 6/ 8;
+}
+
+div.b10{
+  background: black;
+  /* span 3 cols */
+  grid-column: 1/ 1;
+}
+
+div.b11{
+  background: black;
+  /* span 3 cols */
+  grid-column: 12/ 12;
+}
+
+div.b12{
+  background: black;
+  /* span 3 cols */
+  grid-column: 4/ 6;
+}
+
+div.b13{
+  background: black;
+  /* span 3 cols */
+  grid-column: 8/ 10;
+}
+
+
+div.cat{
+  background: #ef962c;
+  /* span 3 cols */
+  grid-column: 4/ 4;
+}
+
+div.catz{
+  background: #ef962c;
+  /* span 3 cols */
+  grid-column: 9/ 10;
+}
+
+div.orange{
+  background: #ef962c;
+  /* span 3 cols */
+  grid-column: 3/ 6;
+}
+
+div.oran{
+  background: #ef962c;
+  /* span 3 cols */
+  grid-column: 8/ 11;
+border: solid #ef962c 10px
+}
+
+div.c1{
+  background: #ef962c;
+  /* span 3 cols */
+  grid-column: 2/ 12;
+}
+
+div.emptyone{
+  background: #ef962c;
+  /* span 3 cols */
+  grid-column: 4/ 10;
+}
+
+div.emptytwo{
+  background: #ef962c;
+  /* span 3 cols */
+  grid-column: 10/ 12;
+}
+
+div.emptythree{
+  background: #ef962c;
+  /* span 3 cols */
+  grid-column: 6/ 8;
+}
+
+div.emptyfour{
+  background: #ef962c;
+  /* span 3 cols */
+  grid-column: 2/ 4;
+}
+
+div.side{
+  background: #ef962c;
+  /* span 3 cols */
+  grid-column: 3/ 4;
+}
+
+div.extra{
+  background: #ef962c;
+  /* span 3 cols */
+  grid-column: 10/ 11;
+border: solid #ef962c 10px
+}
+
+div.finally{
+  background: #ef962c;
+  /* span 3 cols */
+  grid-column: 6/ 8;
+border: solid #ef962c 10px
+}
+
+div.white{
+  background: white;
+  /* span 3 cols */
+  grid-column: 6/ 8;
+}
+
+div.left{
+  background: white;
+  /* span 3 cols */
+  grid-column: 4/ 6;
+}
+
+div.right{
+  background: white;
+  /* span 3 cols */
+  grid-column: 8/ 10;
+}
+
+div.nose{
+  background: #f378ae;
+  /* span 3 cols */
+  grid-column: 6/ 8;
+  border: solid #f378ae 6px
+  ;
+}
+
+div.lilwhite{
+  background: white;
+  /* span 3 cols */
+  grid-column: 3/ 11;
+}
+
+
+div.lily{
+  background: white;
+  /* span 3 cols */
+  grid-column: 5/ 9;
+}
+
+div.end{
+  background: black;
+  /* span 3 cols */
+  grid-column: 5/ 9;
+}
+
